@@ -1,0 +1,138 @@
+
+/* Variable css*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+--primarycolor:#FFCC00;
+--secendarycolor:#353535;
+--primaryfont:"Poppins", sans-serif;
+--secendaryfont:"PT Sans", sans-serif;
+
+}
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+ul,ol{
+   list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width:1110px;
+    margin: auto;
+}
+.align-center{
+align-items: center;
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+body{
+    font-family: var(--primaryfont);
+}
+
+/*COMMON CSS END*/
+/* NAV BER START*/
+
+nav .logo{
+    width: 30%;
+    
+   
+}
+nav .logo,
+nav .menu{
+    padding-bottom: 20px;
+}
+
+
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+nav .menu ul,li{
+    display: inline-block;
+}
+nav .menu ul,li a{
+    color: var(--secendarycolor);
+    font-weight: 500;
+    
+    font-size: 16px;
+    padding: 18px 21px 5px;
+    display: block;
+    position: relative;
+   
+}
+nav .menu li a::before{
+    content:'';
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secendarycolor);
+    transition: 0.35s;
+}
+
+nav .menu li .active:before,
+nav .menu li:hover a::before{
+width: 100%;
+
+}
+/* NAV BER END*/
+
+/*banner start*/
+#banner .bannercnt{
+    width: 53%;
+}
+#banner .bannerimg{
+    width: 47%;
+}
+#banner .bannerimg,
+#banner .bannercnt{
+    color: var(--secendarycolor);
+}
+
+#banner .bannercnt h4{
+    font-weight: 400;
+    font-size: 24px;
+  
+
+}
+#banner .bannercnt h1{
+    font-weight: 700;
+font-size: 60px;
+margin: 15px 0 25px;
+}
+
+#banner .bannercnt p{
+    font-weight: 400;
+font-size: 20px;
+line-height: 180%;
+margin-bottom:45px ;
+}
+
+.btn{
+    border-radius: 20px;
+    background-color: var(--primarycolor);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    padding: 16px 45px;
+    display: inline-block;
+    color: #fff;
+}
+.btn.outline{
+   border: 1px solid var(--secendarycolor);
+    background-color: transparent;
+    color: var(--secendarycolor);
+    padding: 18px 45px;
+    
+}
+#banner .outline{
+    margin-left: 40px;
+}
+
+/*banner end*
